@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/2.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7f83531899.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Movie</title>
+</head>
+
+<body>
+
+    <header>
+        <img src="./assets/img/2.png" class="png" width="50px" height="50px" alt="">
+        
+        <div class="color-box">
+            <a onclick="changColor('red')" class ="color" id="red">#b20a2c</a>
+            <a onclick="changColor('blue')" class ="color" id="blue">#5B86E5</a>
+            <a onclick="changColor('green')" class ="color" id="green"> #2C7744</a>
+            <a onclick="changColor('grey')" class ="color" id="grey">#44494c</a>
+            <a onclick="changColor('yellow')" class ="color" id="yellow">#879b32</a>
+            <a onclick="changColor('orange')" class ="color" id="orange">#FFB75E</a>
+            <a onclick="changColor('black')"  class ="color"id="black">#000000</a>
+        </div>
+        
+        <form action="" id="form">
+            <input type="text" class="search" id="search" placeholder="Search here...">
+        </form>
+    </header>
+
+    <div class="pagination">
+        <div class="page" id="prev">Prev</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next"> Next</div>
+    </div>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-content"></div>
+
+        <a href="javascript:void(0)" class="arrow left-arrow" 
+        id="left-arrow">&#8666;</a>
+
+        <a href="javascript:void(0)" class="arrow right-arrow" 
+        id="right-arrow" >&#8667;</a>
+
+    </div>
+    <main id="main"></main>
+
+    <footer class ="ftr">
+            <p id="copy">Animesh &#169 All Rights Reserved 2022</p>
+    </footer>
+    
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
